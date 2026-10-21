@@ -1,12 +1,11 @@
 import random
 
-poging = 0
+punten = 6
 getal = 0
-willekeurig_getal = random.randint(1, 10)
+te_raden_getal = random.randint(1,10)
 
-while getal != willekeurig_getal:
-    poging += 1
-    getal = int(input("Raad een getal tussen 1 en 10:"))
+while (getal != te_raden_getal) and (punten != 0):
+    getal = int(input(f"Raad het getal tussen 1 en 10 je hebt nog {punten} pogingen: "))
+    punten -= 1
 
-print(f"""Je heb het getal 
-        geraden in {poging} pogingen""")
+print(f"Uw score is {punten} !")
