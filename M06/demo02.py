@@ -1,25 +1,24 @@
-waar = 8>2
+waar = 8 > 2
 if waar == True:
-    print("OK")
+    print("Waar")
 
-waar = 8>2
 if waar:
-    print("OK")
+    print("Waar")
 
 # OR
 # False - False = False
-# False - True = True
 # True - False = True
+# False - True = True
 # True - True = True
 
-if disk_gebruik > 90 or waar:
-    print("OK")
+if waar or 10 > 5:
+    print("OR: Waar")
 
 # AND
 # False - False = False
-# False - True = False
 # True - False = False
+# False - True = False
 # True - True = True
 
-if disk_gebruik > 90 and waar:
-    print("OK")
+if waar and 10 > 5:
+    print("AND: Waar")

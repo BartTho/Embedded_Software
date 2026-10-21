@@ -1,0 +1,10 @@
+familienaam = input('Familienaam: ')
+voornaam = input('Voornaam: ')
+straat = input('Straat: ')
+huisnummer = input('Huisnummer: ')
+postcode = input('Postcode: ')
+gemeente = input('Gemeente: ')
+
+print(f"{voornaam} {familienaam}")
+print(f"{straat} {huisnummer}")
+print(f"{postcode} {gemeente}")
