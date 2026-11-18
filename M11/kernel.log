@@ -1,0 +1,49 @@
+2026-08-21 08:00:01 kernel INFO Linux kernel 6.8.0-generic booting on x86_64
+2026-08-21 08:00:01 kernel INFO Detected 8 CPU cores and 16 logical processors
+2026-08-21 08:00:02 kernel INFO Memory available: 16384 MB
+2026-08-21 08:00:02 kernel INFO Initializing scheduler and process accounting
+2026-08-21 08:00:03 kernel INFO ACPI: Power Button [PWRB] registered
+2026-08-21 08:00:03 kernel INFO PCI: Probing PCI hardware
+2026-08-21 08:00:04 kernel INFO ahci 0000:00:17.0: AHCI controller initialized
+2026-08-21 08:00:04 kernel INFO nvme nvme0: detected 512 GB storage device
+2026-08-21 08:00:05 kernel INFO EXT4-fs: mounted filesystem on /dev/nvme0n1p2
+2026-08-21 08:00:05 kernel INFO usbcore: registered new interface driver usb-storage
+2026-08-21 08:00:06 kernel INFO e1000e 0000:03:00.0: Intel network adapter initialized
+2026-08-21 08:00:06 kernel INFO eth0: link is up at 1000 Mbps full duplex
+2026-08-21 08:00:07 kernel INFO systemd: system initialization completed
+2026-08-21 08:00:08 kernel INFO Loading kernel module snd_hda_intel
+2026-08-21 08:00:09 kernel INFO thermal_zone0: temperature 42 C
+2026-08-21 08:00:10 kernel INFO Firewall hooks registered successfully
+2026-08-21 08:01:14 kernel INFO cron: scheduled maintenance task started
+2026-08-21 08:01:15 kernel INFO Network namespace created for service container
+2026-08-21 08:02:03 kernel WARNING CPU frequency driver falling back to conservative mode
+2026-08-21 08:02:04 kernel INFO CPU frequency policy applied to all cores
+2026-08-21 08:03:27 kernel INFO DHCP lease acquired for 192.168.1.42
+2026-08-21 08:04:11 kernel WARNING nvme0: I/O queue depth reduced temporarily
+2026-08-21 08:04:12 kernel INFO nvme0: I/O queue depth restored to 64
+2026-08-21 08:05:39 kernel INFO usb 1-2: new high-speed USB device detected
+2026-08-21 08:06:02 kernel ERROR usb 1-2: device descriptor read failed, error -71
+2026-08-21 08:06:03 kernel WARNING usb 1-2: reset high-speed USB device
+2026-08-21 08:06:05 kernel INFO usb 1-2: device successfully reconnected
+2026-08-21 08:07:18 kernel INFO audit: user session opened for uid 1000
+2026-08-21 08:08:44 kernel INFO eth0: received 10000 packets, dropped 0
+2026-08-21 08:09:07 kernel WARNING thermal_zone0: temperature reached 75 C
+2026-08-21 08:09:10 kernel INFO thermal_zone0: cooling policy activated
+2026-08-21 08:10:22 kernel ERROR EXT4-fs warning: delayed allocation failed on nvme0n1p2
+2026-08-21 08:10:23 kernel INFO EXT4-fs: journal commit completed after retry
+2026-08-21 08:11:50 kernel INFO Memory reclaim completed: 128 MB freed
+2026-08-21 08:12:16 kernel WARNING memory pressure detected, reclaiming cache pages
+2026-08-21 08:12:19 kernel INFO Memory pressure cleared
+2026-08-21 08:13:41 kernel INFO Bluetooth controller hci0 initialized
+2026-08-21 08:14:03 kernel CRITICAL watchdog: soft lockup detected on CPU 3
+2026-08-21 08:14:04 kernel ERROR watchdog: CPU 3 failed to respond within 22 seconds
+2026-08-21 08:14:06 kernel INFO watchdog: CPU 3 recovered after interrupt delivery
+2026-08-21 08:15:30 kernel INFO Kernel module overlay loaded
+2026-08-21 08:16:12 kernel WARNING conntrack table reached 80 percent capacity
+2026-08-21 08:16:15 kernel INFO conntrack table cleanup completed
+2026-08-21 08:17:28 kernel INFO NTP synchronized system clock
+2026-08-21 08:18:49 kernel ERROR eth0: transmit timeout, resetting adapter
+2026-08-21 08:18:52 kernel INFO eth0: adapter reset completed successfully
+2026-08-21 08:19:33 kernel INFO scheduler: load average returned to normal
+2026-08-21 08:20:00 kernel CRITICAL kernel panic safeguard armed after repeated hardware faults
+2026-08-21 08:20:01 kernel INFO emergency diagnostics snapshot written to /var/log/kernel-diagnostics.log
