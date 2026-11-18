@@ -1,14 +1,17 @@
-# SET klinkers -> Een set is een collectie waarin elk afzonderlijk element slechts éénmaal kan
-# worden opgeslagen
-klinkers = {"a","e","i","o","u"}
-kwadraten = set(x**2 for x in range(10))
+deelbaardoor2 = {2,4,6,8,10,12,14,16,18,20}
+deelbaardoor3 = {3,6,9,12,15,18}
 
-print(klinkers)
-print(kwadraten)
+deelbaardoor2_of_door3 = deelbaardoor2.union(deelbaardoor3)
+print(deelbaardoor2_of_door3)
+deelbaardoor2_of_door3 = deelbaardoor2 | deelbaardoor3
+print(deelbaardoor2_of_door3)
 
-# Er is geen manier om te bepalen in welke volgorde je de elementen te zien krijgt
-# Je kan de elementen van een set niet sorteren.
-kwadraten.add(100)
-kwadraten.remove(0)
-for x in kwadraten:
-    print(x)
+deelbaardoor2_en_NIET_door3 = deelbaardoor2.difference(deelbaardoor3)
+print(deelbaardoor2_en_NIET_door3)
+deelbaardoor2_en_NIET_door3 = deelbaardoor2 - deelbaardoor3
+print(deelbaardoor2_en_NIET_door3)
+
+deelbaardoor2_en_door3 = deelbaardoor2.intersection(deelbaardoor3)
+print(deelbaardoor2_en_door3)
+deelbaardoor2_en_door3 = deelbaardoor2 & deelbaardoor3
+print(deelbaardoor2_en_door3)

@@ -1,16 +1,18 @@
-deelbaardoor2 = {2,4,6,7,8,10,12,14,16,18,20}
-deelbaardoor3 = {3,6,9,12,15,18}
+import operator
+gebruiker = {"voornaam" : "Bart", "achternaam" : "Thonissen", \
+             "login" : "bart", "laatstelogin" : "2026-11-12", \
+             "aantal" : 6}
 
-deelbaardoor2of3 = deelbaardoor2.union(deelbaardoor3)
-print(deelbaardoor2of3)
-deelbaardoor2enNIETdoor3 = deelbaardoor2.difference(deelbaardoor3)
-print(deelbaardoor2enNIETdoor3)
-deelbaardoor2endoor3 = deelbaardoor2.intersection(deelbaardoor3)
-print(deelbaardoor2endoor3)
+print(gebruiker)
+print(gebruiker["voornaam"])
+print(gebruiker.get("naam", "onbekend"))
+gebruiker.update({"laatstelogin" : "2026-11-18", "aantal" : 8})
+print(gebruiker)
+del gebruiker["laatstelogin"]
+print(gebruiker)
+for key, value in gebruiker.items():
+    print(f"{key}: {value}")
 
-deelbaardoor2of3 = deelbaardoor2 | deelbaardoor3
-print(deelbaardoor2of3)
-deelbaardoor2enNIETdoor3 = deelbaardoor2 - deelbaardoor3
-print(deelbaardoor2enNIETdoor3)
-deelbaardoor2endoor3 = deelbaardoor2 & deelbaardoor3
-print(deelbaardoor2endoor3)
+lijst = {"a":6, "b":10,"c":8,"d":9 }
+print(f"totaal: {sum(lijst.values())}")
+print(sorted(lijst.items(), key=operator.itemgetter(1), reverse=True))

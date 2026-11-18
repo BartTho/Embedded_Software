@@ -1,17 +1,25 @@
-# [[1, 11], [2, 5], [3, 5], [4, 4]]
-getallen = [1, 2, 3, 4, 5, 8, 12, 15, 19, 21, 24]
-deler = [1,2,3,4]
-overzicht =  []
+log = []
 
-for groep in deler:
-    aantal = 0
+with open("kernel.log") as bestand:
+    regel = bestand.readline()
 
-    for getal in getallen:
-        if getal % groep == 0:
-            aantal += 1
+    while regel:
+        log.append(regel[27:-1])
+        regel = bestand.readline()
 
-    overzicht.append([groep, aantal])
+log.sort()
 
-print("#"*60)
-print(f"Dit is de lijst: {overzicht}")
-print("#"*60)
+out = []
+aantal = 0
+soort = log[0][:log[0].find(" ")]
+
+for logRegel in log:
+    if logRegel[:logRegel.find(" ")] == soort:
+        aantal += 1
+    else:
+        out.append([soort, aantal])
+        soort = logRegel[:logRegel.find(" ")]
+        aantal = 1
+
+out.append([soort, aantal])
+print(out)

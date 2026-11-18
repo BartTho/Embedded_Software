@@ -1,4 +1,4 @@
-getallen = [1, 2, 3, 4, 5, 8, 12, 15, 19, 21, 24]
+getallen = [1,2,3,4,5,8,12,15,19,21,24]
 deelbaardoor2 = []
 deelbaardoor3 = []
 
@@ -8,8 +8,7 @@ for getal in getallen:
     if getal % 3 == 0:
         deelbaardoor3.append(getal)
 
-print("#"*60)
-print(f"Deelbaar door 2 : {deelbaardoor2}")
-print("#"*60)
-print(f"Deelbaar door 3 : {deelbaardoor3}")
-print("#"*60)
+print(f"#"*60)
+print(f"Deze zijn deelbaar door 2 : {deelbaardoor2}")
+print(f"Deze zijn deelbaar door 3 : {deelbaardoor3}")
+print(f"#"*60)
